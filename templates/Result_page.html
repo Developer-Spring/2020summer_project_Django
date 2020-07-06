@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>장외파생상품 투자자정보 확인서</h2>
+
+        <h4>{{ Document.InvestorType }}</h4>
+
+        <div>
+            {{ Document.asset }}
+        </div>
+
+    </div>
+<!--    <form action="{% url 'trial: ' Document.id %}" method="post">-->
+<!--        {% csrf_token %}-->
+<!--            <div class="mb-3">-->
+<!--                <h6>투자자타입</h6>-->
+<!--            </div>-->
+
+
+<!--    </form>-->
+</div>
+{% endblock %}
